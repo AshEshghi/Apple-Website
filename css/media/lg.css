@@ -1,0 +1,378 @@
+@media screen and (max-width: 834px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  div.wrapper > div.menu {
+    height: auto;
+    width: 100%;
+    display: grid;
+    position: fixed;
+    margin: 0 auto;
+    grid-template-columns: 0% 100% 0%;
+    background-color: rgba(0, 0, 0, 0.788);
+    justify-items: center;
+    z-index: 5; }
+    div.wrapper > div.menu > div.tab {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      height: inherit;
+      width: inherit;
+      align-items: center;
+      justify-items: center;
+      margin-bottom: 10px; }
+      div.wrapper > div.menu > div.tab > div.InMenu > a {
+        font-size: 13px;
+        color: #c5c5c5;
+        font-family: SanFrancis;
+        transition: 300ms;
+        text-decoration: none;
+        cursor: pointer; }
+        div.wrapper > div.menu > div.tab > div.InMenu > a:hover {
+          color: #f5f5f7;
+          transition: 300ms; }
+      div.wrapper > div.menu > div.tab > div.InMenu:nth-of-type(1) > a {
+        font-size: 20px; }
+      div.wrapper > div.menu > div.tab > div.InMenu:nth-last-of-type(1) > a,
+      div.wrapper > div.menu > div.tab div.InMenu:nth-last-of-type(2) > a {
+        font-size: 16px;
+        grid-area: logo; }
+      div.wrapper > div.menu > div.tab > div.InMenu:nth-last-of-type(5) {
+        order: 13;
+        display: none; }
+  div.wrapper div.iphone {
+    display: flex;
+    text-align: center;
+    height: 620px;
+    row-gap: 8px;
+    background: url("../../images/iphone14.jpg") center center no-repeat;
+    background-size: fill;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: SanFrancis;
+    padding-top: 85px;
+    margin-bottom: 0px; }
+    div.wrapper div.iphone > h1 {
+      font-family: SanFrancisBold;
+      font-weight: bolder;
+      font-size: 49px;
+      color: #1d1d1f;
+      position: relative; }
+    div.wrapper div.iphone > h3 {
+      font-size: 25px;
+      font-weight: 300;
+      color: #1d1d1f; }
+    div.wrapper div.iphone div.links > a {
+      text-decoration: none;
+      color: #06c;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: 900;
+      transition: 300ms; }
+      div.wrapper div.iphone div.links > a:hover {
+        text-decoration: underline;
+        transition: 300ms; }
+    div.wrapper div.iphone div.ax {
+      width: 100%;
+      height: 500px;
+      display: flex; }
+      div.wrapper div.iphone div.ax > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  div.wrapper div.givewow {
+    display: flex;
+    text-align: center;
+    height: 600px;
+    row-gap: 12px;
+    background: url("../../images/giveWOW.jpg") center center no-repeat;
+    background-size: fill;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    font-family: SanFrancis;
+    padding-bottom: 50px;
+    margin-bottom: 1px; }
+    div.wrapper div.givewow > h1 {
+      font-family: SanFrancisBold;
+      color: #f0f0f3;
+      font-size: 50px; }
+    div.wrapper div.givewow > h3 {
+      font-family: SanFrancis;
+      color: #f0f0f3;
+      font-size: 28px; }
+    div.wrapper div.givewow div.links > a {
+      text-decoration: none;
+      color: #047cf3;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: 900;
+      transition: 300ms; }
+      div.wrapper div.givewow div.links > a:hover {
+        text-decoration: underline;
+        transition: 300ms; }
+  div.wrapper div.applecard {
+    display: flex;
+    text-align: center;
+    height: 620px;
+    row-gap: 20px;
+    background: url("../../images/applecard.jpg") center center no-repeat;
+    background-size: fill;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    font-family: SanFrancis;
+    padding-top: 70px;
+    margin-bottom: 0px; }
+    div.wrapper div.applecard > h1 {
+      font-family: SanFrancisBold;
+      color: #f0f0f3;
+      font-size: 55px; }
+    div.wrapper div.applecard > h3 {
+      font-family: SanFrancis;
+      color: #f0f0f3;
+      font-size: 28px; }
+    div.wrapper div.applecard > h4 {
+      font-family: SanFrancis;
+      color: #f0f0f3;
+      font-size: 21px; }
+    div.wrapper div.applecard div.links > a {
+      text-decoration: none;
+      color: #4da6ff;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: 900;
+      transition: 300ms; }
+      div.wrapper div.applecard div.links > a:hover {
+        text-decoration: underline;
+        transition: 300ms; }
+  div.wrapper div.promos {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center; }
+    div.wrapper div.promos > div {
+      height: 600px;
+      cursor: pointer; }
+    div.wrapper div.promos > div.p1 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/promoiphone.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p1 > h1 {
+        font-family: SanFrancisBold;
+        color: #f0f0f3;
+        font-size: 35px; }
+      div.wrapper div.promos > div.p1 > h3 {
+        font-family: SanFrancis;
+        color: #f0f0f3;
+        font-size: 21px; }
+      div.wrapper div.promos > div.p1 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p1 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+    div.wrapper div.promos > div.p2 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/ipad.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p2 > h1 {
+        font-family: SanFrancisBold;
+        color: #1d1d1f;
+        font-size: 40px; }
+      div.wrapper div.promos > div.p2 > h3 {
+        font-family: SanFrancis;
+        color: #1d1d1f;
+        font-size: 22px; }
+      div.wrapper div.promos > div.p2 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p2 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+    div.wrapper div.promos > div.p3 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/airpodsholiday.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p3 > img {
+        width: 30px;
+        margin: 0 auto; }
+      div.wrapper div.promos > div.p3 > h1 {
+        font-family: SanFrancisBold;
+        font-weight: bolder;
+        color: #1d1d1f;
+        font-size: 40px; }
+      div.wrapper div.promos > div.p3 > h3 {
+        font-family: SanFrancis;
+        color: #1d1d1f;
+        font-size: 22px; }
+      div.wrapper div.promos > div.p3 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p3 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+    div.wrapper div.promos > div.p4 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/ultrapromo.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p4 > img {
+        margin: 0 auto;
+        width: 150px; }
+      div.wrapper div.promos > div.p4 > h3 {
+        font-family: SanFrancis;
+        color: #1d1d1f;
+        font-size: 22px; }
+      div.wrapper div.promos > div.p4 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p4 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+    div.wrapper div.promos > div.p5 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/series8promo.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p5 > img {
+        margin: 0 auto;
+        width: 150px; }
+      div.wrapper div.promos > div.p5 > h3 {
+        font-family: SanFrancis;
+        font-weight: 100;
+        color: #f0f0f3;
+        font-size: 22px; }
+      div.wrapper div.promos > div.p5 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 100;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p5 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+    div.wrapper div.promos > div.p6 {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background: url("../../images/ipadpro.jpg") center center no-repeat;
+      background-size: fill;
+      padding-top: 50px;
+      row-gap: 12px; }
+      div.wrapper div.promos > div.p6 > h1 {
+        font-family: SanFrancisBold;
+        color: #f0f0f3;
+        font-size: 40px; }
+      div.wrapper div.promos > div.p6 > h3 {
+        font-family: SanFrancis;
+        color: #f0f0f3;
+        font-size: 22px;
+        font-weight: 100; }
+      div.wrapper div.promos > div.p6 div.links > a {
+        font-family: SanFrancis;
+        text-decoration: none;
+        color: #047cf3;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 100;
+        transition: 300ms; }
+        div.wrapper div.promos > div.p6 div.links > a:hover {
+          text-decoration: underline;
+          transition: 300ms; }
+  div.wrapper > div.footer {
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f7;
+    padding: 0% 5%;
+    padding-top: 10px; }
+    div.wrapper > div.footer > p {
+      margin-bottom: 10px;
+      font-family: SanFrancis;
+      color: #6e6e73;
+      font-size: 13px; }
+      div.wrapper > div.footer > p:nth-of-type(1) {
+        color: #565658; }
+    div.wrapper > div.footer > div.guide {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); }
+      div.wrapper > div.footer > div.guide > ul {
+        font-family: SanFrancis;
+        font-size: 10px;
+        list-style: none; }
+        div.wrapper > div.footer > div.guide > ul > li {
+          margin-bottom: 10px;
+          color: #424245; }
+          div.wrapper > div.footer > div.guide > ul > li:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+          div.wrapper > div.footer > div.guide > ul > li:nth-of-type(1) {
+            color: #1d1d1fd3;
+            font-size: 12px;
+            font-family: SanFrancisBold;
+            margin-top: 15px;
+            text-decoration: none;
+            cursor: default; }
+    div.wrapper > div.footer > div.credits {
+      height: 35px;
+      background-image: radial-gradient(circle, #ff26aa, #f178d8, #e3aaf3, #e2d3fc, #f5f5f7);
+      color: #424245; }
+      div.wrapper > div.footer > div.credits > h3 {
+        text-align: center;
+        line-height: 35px;
+        font-size: 20px;
+        font-family: cursive; }
+  div.wrapper .swiper {
+    margin: 0px auto;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px; }
+  div.wrapper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    object-fit: cover; }
+  div.wrapper .swiper-slide img {
+    display: block;
+    width: 100%; } }

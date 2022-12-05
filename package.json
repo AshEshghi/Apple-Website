@@ -1,0 +1,16 @@
+{
+  "name": "applesite-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": " node-sass --watch scss/ --output css/ --recursive"
+  },
+  "author": "A.Eshghi",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "^8.0.0",
+    "swiper": "^8.4.5"
+  }
+}
