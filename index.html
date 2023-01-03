@@ -19,7 +19,80 @@
   <body>
     <div class="wrapper">
       <div class="menu">
-        <div class="box"></div>
+        <div class="box">
+          <i class="fa fa-bars"></i>
+          <div class="submenu">
+            <input type="search" placeholder="Search on apple.com" />
+            <hr />
+            <div class="items">
+              <div class="Initem">
+                <a
+                  href="https://www.apple.com/us/shop/goto/store"
+                  target="_blank"
+                  ><span>Store</span></a
+                >
+                <hr />
+              </div>
+
+              <div class="Initem">
+                <a href="https://www.apple.com/mac/" target="_blank"
+                  ><span>Mac</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://www.apple.com/ipad/" target="_blank"
+                  ><span>iPad</span></a
+                >
+                <hr />
+              </div>
+              <!--author: A.Eshghi-->
+              <div class="Initem">
+                <a href="https://www.apple.com/iphone/" target="_blank"
+                  ><span>iPhone</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://www.apple.com/watch/" target="_blank"
+                  ><span>Watch</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://www.apple.com/airpods/" target="_blank"
+                  ><span>AirPods</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://www.apple.com/tv-home/" target="_blank"
+                  ><span>Tv & Home</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://www.apple.com/services/" target="_blank"
+                  ><span>Only On Apple</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a
+                  href="https://www.apple.com/us/shop/goto/buy_accessories"
+                  target="_blank"
+                  ><span>Accessories</span></a
+                >
+                <hr />
+              </div>
+              <div class="Initem">
+                <a href="https://support.apple.com/" target="_blank"
+                  ><span>Support</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="tab">
           <!--author: A.Eshghi-->
           <div class="InMenu">
@@ -91,7 +164,11 @@
             ></a>
           </div>
         </div>
-        <div class="box"></div>
+        <div class="box">
+          <a href="https://www.apple.com/us/shop/goto/bag" target="_blank"
+            ><i class="fas fa-shopping-bag"></i
+          ></a>
+        </div>
       </div>
       <div class="iphone">
         <h1>iPhone 14</h1>
@@ -354,6 +431,26 @@
           clickable: true,
         },
       });
+      let menu = document.querySelector(
+        "div.wrapper>div.menu>div.box:nth-of-type(1)>i"
+      );
+      let submenu = document.querySelector(
+        "div.wrapper>div.menu>div.box:nth-of-type(1)>div.submenu"
+      );
+      console.log(submenu);
+      let flag = true;
+      menu.addEventListener("click", function () {
+        if (flag == true) {
+          submenu.style.display = "block";
+          menu.setAttribute("class", "fa fa-window-close");
+          flag = false;
+        } else {
+          submenu.style.display = "none";
+          menu.setAttribute("class", "fa fa-bars");
+          flag = true;
+        }
+      });
+      let user = document.querySelector("i.fa-bars");
     </script>
     <!--author: A.Eshghi-->
   </body>

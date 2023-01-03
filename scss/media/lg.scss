@@ -7,24 +7,116 @@
   //start project
   div.wrapper {
     > div.menu {
-      height: auto;
+      > div.box:nth-of-type(1) {
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 1fr;
+        height: inherit;
+        width: inherit;
+        line-height: 50px;
+        margin-left: 8px;
+        position: relative;
+        margin-top: 9px;
+        > i {
+          font-size: 30px;
+          color: #c5c5c5;
+          cursor: pointer;
+        }
+        > div.submenu {
+          width: 100vw;
+          height: auto;
+          margin: unset;
+          background-color: rgba(0, 0, 0, 0.93);
+          position: absolute;
+          left: -8px;
+          top: 41px;
+          display: none;
+          overflow: scroll;
+          > input {
+            display: flex;
+            width: 90%;
+            background-color: #272729;
+            color: #6e6e73;
+            height: 53px;
+            font-size: 30px;
+            padding: 8px;
+            border-radius: 15px;
+            margin: 10px auto;
+            outline-width: 0px;
+            border-width: 0px;
+          }
+          > hr {
+            color: #505053;
+            border-color: #505053;
+          }
+          > div.items {
+            display: grid;
+            margin: 0 auto;
+            width: 80vw;
+            > div.Initem {
+              > hr {
+                border-color: #505053;
+              }
+              display: flex;
+              flex-direction: column;
+              height: 50px;
+              width: 100%;
+              line-height: 50px;
+
+              > a {
+                font-size: 30px;
+                color: #c5c5c5;
+                font-family: SanFrancis;
+                transition: 300ms;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                  color: #f5f5f7;
+                  transition: 300ms;
+                }
+              }
+            }
+          }
+        }
+      }
+      > div.box:last-of-type {
+        display: grid;
+        justify-items: right;
+        grid-template-columns: 1fr;
+        height: inherit;
+        width: inherit;
+        margin-right: 8px;
+        margin-top: 9px;
+        > a > i {
+          font-size: 30px;
+          color: #c5c5c5;
+          transition: 300ms;
+          text-decoration: none;
+          cursor: pointer;
+          &:hover {
+            color: #f5f5f7;
+            transition: 300ms;
+          }
+        }
+      }
+      height: 50px;
       width: 100%;
       display: grid;
       position: fixed;
       margin: 0 auto;
-      grid-template-columns: 0% 100% 0%;
-      background-color: rgba(0, 0, 0, 0.788);
+      grid-template-columns: 33% 33% 33%;
+      background-color: rgba(0, 0, 0, 0.949);
       justify-items: center;
       z-index: 5;
       > div.tab {
         display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: 1fr;
         height: inherit;
         width: inherit;
         align-items: center;
         justify-items: center;
-        margin-bottom: 10px;
         > div.InMenu > a {
+          display: none;
           font-size: 13px;
           color: #c5c5c5;
           font-family: SanFrancis;
@@ -38,16 +130,14 @@
         }
         // author: A.Eshghi
         > div.InMenu:nth-of-type(1) > a {
-          font-size: 20px;
+          font-size: 34px;
+          display: grid;
+          align-self: center;
+          margin-top: 7px;
         }
         > div.InMenu:nth-last-of-type(1) > a,
         div.InMenu:nth-last-of-type(2) > a {
           font-size: 16px;
-          grid-area: logo;
-        }
-        > div.InMenu:nth-last-of-type(5) {
-          order: 13;
-          display: none;
         }
       }
     }

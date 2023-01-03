@@ -7,6 +7,26 @@
   //start project
   div.wrapper {
     > div.menu {
+      > div.box {
+        > i {
+          display: none;
+        }
+        > div.submenu {
+          display: none;
+          > input {
+            display: none;
+          }
+          > div.items {
+            display: none;
+          }
+          > span {
+            display: none;
+          }
+        }
+      }
+      > div.box > a > i {
+        display: none;
+      }
       height: 48px;
       width: 100%;
       display: grid;

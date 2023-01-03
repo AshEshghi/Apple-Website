@@ -12,6 +12,18 @@
     grid-template-columns: 8% 84% 8%;
     background-color: rgba(0, 0, 0, 0.788);
     z-index: 5; }
+    div.wrapper > div.menu > div.box > i {
+      display: none; }
+    div.wrapper > div.menu > div.box > div.submenu {
+      display: none; }
+      div.wrapper > div.menu > div.box > div.submenu > input {
+        display: none; }
+      div.wrapper > div.menu > div.box > div.submenu > div.items {
+        display: none; }
+      div.wrapper > div.menu > div.box > div.submenu > span {
+        display: none; }
+    div.wrapper > div.menu > div.box > a > i {
+      display: none; }
     div.wrapper > div.menu > div.tab {
       display: grid;
       height: inherit;
